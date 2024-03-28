@@ -7,17 +7,17 @@
         private readonly string _controllerPortNumber;
         private DisplayType _dType;
 
-        public PortType Type { get => _type; set => _type = value; }
-        public int RaspbPortNumber { get => _raspbPortNumber; set => _raspbPortNumber = value; }
+        public PortType Type { get => _type; }
+        public int RaspbPortNumber { get => _raspbPortNumber; }
         public string ControllerPortNumber => _controllerPortNumber;
-        public DisplayType DType { get => _dType; set => _dType = value; }
+        public DisplayType DType { get => _dType; }
 
         public Port(PortType type, int raspbPortNumber, string controllerPortNumber, DisplayType dType)
         {
-            Type = type;
-            RaspbPortNumber = raspbPortNumber;
+            _type = type;
+            _raspbPortNumber = raspbPortNumber;
             _controllerPortNumber = controllerPortNumber;
-            DType = dType;
+            _dType = dType;
         }
 
         public Port(string controllerPortNumber)

@@ -1,6 +1,7 @@
 ﻿namespace Stands
 {
-    internal class Light
+    class Light
     {
+        public int Intensity;
     }
 }
